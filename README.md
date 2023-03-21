@@ -31,7 +31,7 @@ For more information about `west`, see <https://docs.zephyrproject.org/1.14.0/gu
  cd /path/to/vouch-zephyr-nfc08a1/vouch/apps/nfc08a1
  ```
 
-* Build using west. The first time, the board needs to specified:\
+* Build using west. The first time, the board needs to specified:
  ```
  west build --board=nucleo_l053r8 -p always
  ```
