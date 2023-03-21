@@ -25,6 +25,9 @@ manifest:
       remote: zephyrproject
       revision: 90952df320f30c696ea73a22a0e50f20b8f94fd3
       path: modules/hal/espressif
+    - name: hal_stm32
+      remote: zephyrproject
+      path: modules/hal_stm32
     - name: zephyr-st25r
       path: modules/lib/st25r
       revision: mfikes/dev
