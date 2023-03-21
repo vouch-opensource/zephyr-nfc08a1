@@ -28,7 +28,7 @@ For more information about `west`, see <https://docs.zephyrproject.org/1.14.0/gu
 * `cd` to the application directory.\
  E.g.:
  ```
- cd /path/to/vouch-zephyr/vouch/apps/dk-test-app`
+ cd /path/to/vouch-zephyr-nfc08a1/vouch/apps/nfc08a1`
  ```
 
 * Build using west. The first time, the board needs to specified:\
