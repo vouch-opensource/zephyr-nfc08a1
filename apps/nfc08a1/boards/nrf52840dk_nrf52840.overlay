@@ -1,0 +1,27 @@
+&spi3 {
+    status = "okay";
+
+    cs-gpios = <&gpio1 12 GPIO_ACTIVE_LOW>;
+
+    nfc0: st25r@0 {
+        compatible = "st,st25r";
+        reg = <0x0>;
+        spi-max-frequency = <4000000>;
+        irq-gpios = <&gpio0 3 GPIO_ACTIVE_HIGH>;
+    };
+};
+
+/*
+&spi1 {
+    status = "disabled";
+};
+
+&i2c0 {
+    status = "okay";
+    nfc1: st25r@0 {
+        compatible = "st,st25r";
+        reg = <0x0>;
+        irq-gpios = <&gpio0 4 GPIO_ACTIVE_HIGH>;
+    };
+};
+*/
