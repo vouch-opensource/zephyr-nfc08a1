@@ -33,7 +33,7 @@ For more information about `west`, see <https://docs.zephyrproject.org/1.14.0/gu
 
 * Build using west. The first time, the board needs to specified:\
  ```
- west build --board=qemu_cortex_m3 -p always
+ west build --board=nucleo_l053r8 -p always
  ```
 
  Next time, you can just invoke the build command:
