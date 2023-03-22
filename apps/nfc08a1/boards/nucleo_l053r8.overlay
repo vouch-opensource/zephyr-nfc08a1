@@ -4,8 +4,8 @@
     nfc0: st25r@0 {
         compatible = "st,st25r";
         reg = <0x0>;
-        spi-max-frequency = <8000000>;
-        reset-gpios     = <&gpioa  4 GPIO_ACTIVE_LOW>;
-        irq-gpios     = <&gpioa  3 GPIO_ACTIVE_LOW>;
+        spi-max-frequency = <5000000>;
+        reset-gpios = <&gpioa  4 GPIO_ACTIVE_LOW>;
+        irq-gpios = <&gpioa  3 GPIO_ACTIVE_LOW>;
     };
 };
