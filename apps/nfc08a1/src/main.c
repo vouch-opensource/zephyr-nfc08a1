@@ -16,7 +16,9 @@ int main()
     } else {
         while (1) {
             LOG_INF("main loop");
-            demoCycle();
+            //demoCycle();
         }
     }
+
+    return 0;
 }
