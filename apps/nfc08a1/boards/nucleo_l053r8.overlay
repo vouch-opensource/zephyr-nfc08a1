@@ -21,6 +21,22 @@
     };
 };
 */
+
+/ {
+    soc {
+        pin-controller@50000000 {
+            i2c1_scl_pb8: i2c1_scl_pb8 {
+                slew-rate = "very-high-speed";
+                /*/delete-property/ bias-pull-up;*/
+            };
+            i2c1_sda_pb9: i2c1_sda_pb9 {
+                slew-rate = "very-high-speed";
+                /*/delete-property/ bias-pull-up;*/
+            };
+        };
+    };
+};
+
 &i2c1 {
     status = "okay";
     clock-frequency = <100000>;

@@ -1,3 +1,4 @@
+/*
 &spi3 {
     status = "okay";
 
@@ -10,18 +11,20 @@
         irq-gpios = <&gpio0 3 GPIO_ACTIVE_HIGH>;
     };
 };
+*/
 
-/*
 &spi1 {
     status = "disabled";
 };
 
 &i2c0 {
     status = "okay";
+    clock-frequency = <100000>;
+
     nfc1: st25r@0 {
         compatible = "st,st25r";
         reg = <0x0>;
         irq-gpios = <&gpio0 4 GPIO_ACTIVE_HIGH>;
     };
 };
-*/
+
