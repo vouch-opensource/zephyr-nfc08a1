@@ -5,10 +5,6 @@ project(nfc08a1)
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-set(libs_dir "${CMAKE_CURRENT_SOURCE_DIR}/../../../modules/lib")
-set(drivers_dir "${CMAKE_CURRENT_SOURCE_DIR}/../../drivers")
-set(shared_dir "${CMAKE_CURRENT_SOURCE_DIR}/../../shared")
-
 # This makes sure drivers can find the relevant app config files
 zephyr_include_directories(
     ${CMAKE_CURRENT_SOURCE_DIR}/src
