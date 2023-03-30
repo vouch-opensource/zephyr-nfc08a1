@@ -7,7 +7,7 @@
         };
     };
 };
-
+/*
 &spi1 {
     status = "okay";
 
@@ -17,6 +17,16 @@
         compatible = "st,st25r";
         reg = <0x0>;
         spi-max-frequency = <4000000>;
+        irq-gpios = <&gpioa 0 GPIO_ACTIVE_HIGH>;
+    };
+};
+*/
+&i2c1 {
+    status = "okay";
+
+    nfc1: st25r@0 {
+        compatible = "st,st25r";
+        reg = <0x0>;
         irq-gpios = <&gpioa 0 GPIO_ACTIVE_HIGH>;
     };
 };
