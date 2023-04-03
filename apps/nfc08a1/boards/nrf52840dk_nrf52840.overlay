@@ -19,11 +19,10 @@
 
 &i2c0 {
     status = "okay";
-    clock-frequency = <100000>;
 
-    nfc1: st25r@0 {
+    nfc1: st25r@50 {
         compatible = "st,st25r";
-        reg = <0x0>;
+        reg = <0x50>;
         irq-gpios = <&gpio0 4 GPIO_ACTIVE_HIGH>;
     };
 };
