@@ -30,7 +30,7 @@ manifest:
       path: modules/hal_stm32
     - name: zephyr-st25r
       path: modules/lib/st25r
-      revision: mfikes/dev
+      revision: mfikes/i2c
       remote: vouchio
 
   self:
