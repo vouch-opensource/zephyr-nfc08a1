@@ -24,7 +24,6 @@
 
 &i2c1 {
     status = "okay";
-    clock-frequency = <100000>;
     nfc1: st25r@50 {
         compatible = "st,st25r";
         reg = <0x50>;
