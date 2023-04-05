@@ -18,8 +18,6 @@ target_sources(app PRIVATE
     )
 
 set(extra_includes
-            "${shared_dir}"
-            "${drivers_dir}"
             "src"
             )
 
