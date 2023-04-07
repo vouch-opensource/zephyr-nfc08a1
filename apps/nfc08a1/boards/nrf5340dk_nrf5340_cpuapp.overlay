@@ -16,6 +16,8 @@
 &i2c1 {
     status = "okay";
 
+    zephyr,concat-buf-size = <40>;
+
     nfc1: st25r@50 {
         compatible = "st,st25r";
         reg = <0x50>;
