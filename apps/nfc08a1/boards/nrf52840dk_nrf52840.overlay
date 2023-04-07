@@ -23,7 +23,7 @@
     nfc1: st25r@50 {
         compatible = "st,st25r";
         reg = <0x50>;
-        irq-gpios = <&gpio0 4 GPIO_ACTIVE_HIGH>;
+        irq-gpios = <&gpio0 3 GPIO_ACTIVE_HIGH>;
     };
 };
 
