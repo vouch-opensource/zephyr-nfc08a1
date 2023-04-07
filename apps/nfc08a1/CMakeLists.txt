@@ -5,11 +5,6 @@ project(nfc08a1)
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-# This makes sure drivers can find the relevant app config files
-zephyr_include_directories(
-    ${CMAKE_CURRENT_SOURCE_DIR}/src
-)
-
 target_sources(app PRIVATE
     src/analogConfigTbl_NFC08A1.c
     src/demo_ce.c
@@ -18,8 +13,6 @@ target_sources(app PRIVATE
     )
 
 set(extra_includes
-            "${shared_dir}"
-            "${drivers_dir}"
             "src"
             )
 
