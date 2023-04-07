@@ -39,7 +39,7 @@ Reconfigure the X-NUCLEO-NFC08A1 for I2C by
 
 ### Software
 
-0. Change `prj.conf` to specify `CONFIG_I2C=y` and `CONFIG_RFAL_USE_I2C=y`
+0. Change `prj.conf` to specify `CONFIG_SPI=n`, `CONFIG_I2C=y`, and `CONFIG_RFAL_USE_I2C=y`
 0. Revise the board overlay (in the `boards` directory) to uncomment the I2C devicetree configuration and comment the SPI configuration.
 
 ## Building an application
