@@ -1,3 +1,6 @@
+/* SPI configuration */
+
+/*
 / {
     soc {
         pin-controller@50000000 {
@@ -7,7 +10,7 @@
         };
     };
 };
-/*
+
 &spi1 {
     status = "okay";
 
@@ -21,6 +24,8 @@
     };
 };
 */
+
+/* I2C configuration */
 
 &i2c1 {
     status = "okay";

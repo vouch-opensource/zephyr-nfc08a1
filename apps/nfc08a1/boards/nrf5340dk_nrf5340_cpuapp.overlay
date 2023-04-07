@@ -1,3 +1,5 @@
+/* SPI configuration */
+
 /*
 &spi4 {
     status = "okay";
@@ -12,6 +14,8 @@
     };
 };
 */
+
+/* I2C configuration */
 
 &i2c1 {
     status = "okay";
