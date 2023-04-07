@@ -1,6 +1,5 @@
 /* SPI configuration */
 
-/*
 / {
     soc {
         pin-controller@50000000 {
@@ -23,10 +22,10 @@
         irq-gpios = <&gpioa 0 GPIO_ACTIVE_HIGH>;
     };
 };
-*/
 
 /* I2C configuration */
 
+/*
 &i2c1 {
     status = "okay";
     
@@ -36,3 +35,4 @@
         irq-gpios = <&gpioa 0 GPIO_ACTIVE_HIGH>;
     };
 };
+*/

@@ -1,6 +1,5 @@
 /* SPI configuration */
 
-/*
 &spi4 {
     status = "okay";
 
@@ -13,10 +12,10 @@
         irq-gpios = <&gpio0 4 GPIO_ACTIVE_HIGH>;
     };
 };
-*/
 
 /* I2C configuration */
 
+/*
 &i2c1 {
     status = "okay";
 
@@ -28,3 +27,4 @@
         irq-gpios = <&gpio0 4 GPIO_ACTIVE_HIGH>;
     };
 };
+*/
