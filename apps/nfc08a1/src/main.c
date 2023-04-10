@@ -3,7 +3,7 @@
 #include <zephyr/kernel.h>
 #include <zephyr/logging/log.h>
 
-#include "demo_polling.h"
+#include "demo.h"
 
 LOG_MODULE_DECLARE(ST25R);
 
