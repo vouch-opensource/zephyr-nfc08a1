@@ -32,7 +32,7 @@ By default, the hardware and software are configured for SPI. The following chan
 Reconfigure the X-NUCLEO-NFC08A1 for I2C by doing the following:
 
 0. Solder pin headers onto the SCL and SDA connections (ST2 and ST4) and add jumpers.
-0. Cut traces related to SCLK and MISO (ST5 and ST6 dogbones), and optionally add pinheaders so they can be-rejumpered for SPI mode.
+0. Cut traces related to SCLK and MISO (ST5 and ST6 jumpers), and optionally add pinheaders so they can be-rejumpered for SPI mode.
 0. Solder 1.65 kΩ pullup resistors R116 and R117.
 0. Move resistor R205 to R204 so that I2C_ENAB is pulled low.
 
