@@ -23,6 +23,25 @@ west update
 
 For more information about `west`, see <https://docs.zephyrproject.org/1.14.0/guides/west/repo-tool.html>
 
+## Configuring for I2C
+
+By default, the hardware and software are configured for SPI. The following changes are required for I2C.
+
+### Hardware
+
+Reconfigure the X-NUCLEO-NFC08A1 for I2C by doing the following:
+
+0. Solder pin headers onto the SCL and SDA connections (ST2 and ST4) and add jumpers.
+0. Cut traces related to SCLK and MISO (ST5 and ST6 jumpers), and optionally add pinheaders so they can be-rejumpered for SPI mode.
+0. Solder 1.65 kΩ pullup resistors R116 and R117.
+0. Move resistor R205 to R204 so that I2C_ENAB is pulled low.
+
+
+### Software
+
+0. Change `prj.conf` to specify `CONFIG_SPI=n`, `CONFIG_I2C=y`, and `CONFIG_RFAL_USE_I2C=y`
+0. Revise the board overlay (in the `boards` directory) to uncomment the I2C devicetree configuration and comment the SPI configuration.
+
 ## Building an application
 
 * `cd` to the application directory.\

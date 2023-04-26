@@ -1,3 +1,5 @@
+/* SPI configuration */
+
 &spi3 {
     status = "okay";
 
@@ -11,6 +13,8 @@
     };
 };
 
+/* I2C configuration */
+
 /*
 &spi1 {
     status = "disabled";
@@ -18,10 +22,11 @@
 
 &i2c0 {
     status = "okay";
-    nfc1: st25r@0 {
+
+    nfc1: st25r@50 {
         compatible = "st,st25r";
-        reg = <0x0>;
-        irq-gpios = <&gpio0 4 GPIO_ACTIVE_HIGH>;
+        reg = <0x50>;
+        irq-gpios = <&gpio0 3 GPIO_ACTIVE_HIGH>;
     };
 };
 */
