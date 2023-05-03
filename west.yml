@@ -2,8 +2,8 @@ manifest:
   remotes:
     - name: ncs
       url-base: https://github.com/nrfconnect
-    - name: vouchio
-      url-base: git@github.com:vouchio
+    - name: vouch-opensource
+      url-base: git@github.com:vouch-opensource
     - name: zephyrproject
       url-base: https://github.com/zephyrproject-rtos
 
@@ -31,7 +31,7 @@ manifest:
     - name: zephyr-st25r
       path: modules/lib/st25r
       revision: 5c0d4e299264e6f60237b891b56b270477848d68
-      remote: vouchio
+      remote: vouch-opensource
 
   self:
     path: vouch
